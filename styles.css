@@ -1,0 +1,184 @@
+
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+        }
+        .containermain{
+            display: flex;
+            flex-direction:column;
+            min-height: 100vh;
+        }
+        .navbar{
+            display: flex;
+            flex-direction: row;
+            height: 70px;
+            width: 100vw;
+            justify-content: space-around;
+            align-items: center;
+            overflow: hidden;
+        }
+        .logo{
+            object-fit: contain;
+            height: 8vh;
+            
+        }
+        .navbar ul{
+            display: flex;
+            list-style: none;
+            align-items: center;
+            margin: 1rem;
+        }
+        .navbar li{
+            margin: 1rem;
+            cursor: pointer;
+            color: rgb(144, 143, 143);
+            transition: transform 0.2s ease;
+        }
+        .navbar li:hover{
+            transform:translateY(-2px) ;
+            color: rgb(88, 86, 86);
+        }
+        .butt{
+            height: 30px;
+            width: 100px;
+            
+            background-color: rgb(111, 111, 225);
+            color: white;
+            font-weight: 700;
+            border-radius: 5px;
+            border: none;
+            transition: transform 0.2s ease;
+        }
+        .butt:hover{
+            transform:translateY(-2px) ;
+        }
+        .butt:active{
+            transform: scale(0.95);
+        }
+        .container{
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px,1fr));
+            min-height: 92vh;
+            margin: auto;
+            padding: auto;
+            justify-items: center;
+            align-items: center;
+
+        }
+        .container1{
+            display: flex;
+            flex-direction: column;
+            align-items: start;
+            justify-content: start;
+            margin-left: 7%;
+            margin-right: 7%;
+            gap: 1rem;
+        }
+        .container2{
+            padding: 1rem;
+        }
+        .heading{
+            color: rgb(46, 46, 176);
+            font-weight: 500;
+        }
+        .content{
+            margin-top: 2rem;
+        }
+        .image{
+            
+            max-width: 100%;   
+            height: auto;      
+            
+            border-radius: 15px;
+        }
+        .button{
+            padding: 1rem;
+            margin: 1rem;
+            display: flex;
+            justify-content: start;
+            align-items: start;
+            
+        }
+        
+        #butt1{
+            height: 40px;
+            width: 100px;
+            margin-top: auto;
+            background-color: rgb(111, 111, 225);
+            color: white;
+            font-weight: 700;
+            border-radius: 5px;
+            border: none;
+            margin-left: 0;
+            transition: transform 0.2s ease;
+        }
+        #butt1:active{
+            transform: scale(0.95);
+        }
+        #butt2{
+            height: 40px;
+            width: 100px;
+            margin-top: auto;
+            background-color: rgb(42, 43, 43);
+            color: white;
+            font-weight: 700;
+            border-radius: 5px;
+            border: none;
+            margin-left: 1rem;
+
+            transition: transform 0.2s ease;
+        }
+        #butt2:active{
+            transform: scale(0.95);
+        }
+        footer{
+            text-align: center;
+            font-weight: 700;
+            font-size: 25px;
+            margin-bottom: 1rem;
+        }
+        
+        @media (max-width: 768px) {
+    
+        .navbar ul {
+            display: none;
+        }
+        
+    
+        .navbar {
+            justify-content: space-between;
+            padding: 0 5%;
+        }
+        .image{
+            display: none;
+        }
+        .butt{
+            display: none;
+        }
+        .container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 3rem 1.5rem;
+        background-image:url(WhatsApp\ Image\ 2026-07-07\ at\ 13.57.07.jpeg) ;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+    .heading{
+        color: rgb(190, 223, 251);
+    }
+    h1{
+        color: rgb(165, 209, 209);
+    }
+    .content{
+        color: rgb(228, 239, 239);
+    }
+}
+
+        
+   
